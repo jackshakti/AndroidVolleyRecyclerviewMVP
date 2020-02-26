@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">VolleyMVP</string>
+    <string name="app_nil">Nil</string>
+    <string name="app_validDate">Please select valid Date</string>
+    <string name="app_validUrl">Please provide a valid social media link</string>
+    <string name="app_comingSoon">Coming Soon!</string>
+    <string name="app_ok">OK</string>
+    <string name="app_sorry">SORRY !</string>
+    <string name="alert_noInternet_message">No Internet Connection</string>
+    <string name="app_or">OR</string>
+    <string name="alert_noInternet_setting">Enable in Settings</string>
+    <string name="app_close">Close</string>
+
+</resources>

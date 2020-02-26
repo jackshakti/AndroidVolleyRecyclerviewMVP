@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+        android:minHeight="@dimen/_63sdp"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/_8sdp"
+        android:paddingStart="@dimen/_8sdp">
+
+
+        <com.iopandroid.library.widgets.CustomTextViewRobotoBold
+            android:id="@+id/downloadProgress_title_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="@dimen/_13sdp"
+            tools:ignore="HardcodedText" />
+
+        <ProgressBar
+            android:id="@+id/downloadProgress_progressbar"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_below="@+id/downloadProgress_title_textView"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="10"
+            android:visibility="visible" />
+
+        <com.iopandroid.library.widgets.CustomTextViewRobotoBold
+            android:id="@+id/downloadProgress_downloading_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/downloadProgress_progressbar"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:singleLine="true"
+            android:text="app downloading"
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sdp"
+            tools:ignore="HardcodedText" />
+
+
+        <com.iopandroid.library.widgets.CustomTextViewRobotoBold
+            android:id="@+id/downloadProgress_download_percent_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/downloadProgress_progressbar"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sdp"
+            tools:ignore="HardcodedText" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

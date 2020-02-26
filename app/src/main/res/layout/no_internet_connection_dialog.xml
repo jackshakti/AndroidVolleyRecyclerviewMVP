@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:layoutDirection="locale">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/noInternetDialog_alert_imageView"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:src="@drawable/ic_signal"
+            android:visibility="visible"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/noInternetDialog_title_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/noInternetDialog_alert_imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:alpha="0.8"
+            android:gravity="center"
+            android:text="@string/alert_noInternet_message"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="@dimen/_13sdp"
+            android:visibility="visible"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/noInternetDialog_close_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_below="@+id/noInternetDialog_title_textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_23sdp"
+            android:background="#FFFFFF"
+            android:minWidth="@dimen/_120sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="@string/app_close"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_13sdp"
+            tools:ignore="ButtonStyle,HardcodedText" />
+
+        <TextView
+            android:id="@+id/noInternetDialog_or_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/noInternetDialog_close_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:gravity="center"
+            android:text="@string/app_or"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sdp"
+            android:visibility="visible"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/noInternetDialog_settings_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_below="@+id/noInternetDialog_or_label"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:gravity="center"
+            android:minWidth="@dimen/_120sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="@string/alert_noInternet_setting"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="@dimen/_13sdp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

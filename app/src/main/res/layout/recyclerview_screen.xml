@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/SuccessStory_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:id="@+id/SuccessStory_header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="#00000000">
+
+            <RelativeLayout
+                android:id="@+id/SuccessStory_back_layout"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="match_parent"
+                android:background="#00000000">
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_arrow"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/SuccessStory_back_layout"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="Title"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_16sdp"
+                android:layout_toRightOf="@+id/SuccessStory_back_layout" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/successStory_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/SuccessStory_main_layout"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="#ffffff"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/successStory_empty_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Data Not Available"
+        android:textColor="#000000"
+        android:textSize="@dimen/_13sdp"
+        android:visibility="gone" />
+
+</RelativeLayout>
